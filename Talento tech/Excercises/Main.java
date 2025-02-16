@@ -234,7 +234,7 @@ public class Main {
 
     /* 1.11. Solicitar al usuario la inicial del día de la semana y mostrar el nombre del día completo. La letra inicial puede ser mayúscula o minúscula. Usar la x para el miércoles.  */
 
-    HashMap<String, String> daysOfWeek = new HashMap<>();
+    /* HashMap<String, String> daysOfWeek = new HashMap<>();
     daysOfWeek.put("L", "Lunes");
     daysOfWeek.put("M", "Martes");
     daysOfWeek.put("X", "Miercoles");
@@ -247,15 +247,26 @@ public class Main {
     System.out.println("Ingrese la inicial del dia de la semana: ");
     String day = scanner.nextLine();
     day = day.toUpperCase();
-    System.out.println(daysOfWeek.get(day));
-    
+    System.out.println(daysOfWeek.get(day)); */
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Ingrese la fecha en el formato dd:mm:aa ");
+    String date = scanner.nextLine();
+    String day = date.substring(0, 2);
+    String month = date.substring(3, 5);
+    String year = date.substring(7);
+
+
+    System.out.println( month);
 }
 }
 
-/* 1.12. Solicitar al usuario una fecha (dd:mm:aaaa) y comprobar si es correcta. Para que una fecha sea correcta es necesario: • El año debe ser mayor que cero. 
-
+/* 1.12. Solicitar al usuario una fecha (dd:mm:aaaa) y comprobar si es correcta. Para que una fecha sea correcta es necesario: 
+• El año debe ser mayor que cero. 
 • El mes debe estar entre 1 y 12. 
 • Dependiendo del mes que sea, el día debe estar dentro de los límites válidos. Los meses que tienen 31 días son 1, 3, 5, 7, 8, 10 y 12. Los meses de 30 días son 4, 6, 9 y 11. El mes de 28 días es 2, excepto en un año bisiesto que es 29 días.  */
+
+
+
 
 
 
