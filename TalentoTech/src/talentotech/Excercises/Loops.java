@@ -5,7 +5,7 @@ package talentotech.Excercises;
  * @author Alexander
  */
 public class Loops {
-    
+
     public static void main(String[] args) {
         /*2.1. Realizar un programa que transforme todas las letras del alfabeto de mayúsculas a minúsculas. */
  /*char[] alphabet = {'A', 'b', 'C', 'd', 'E', 'f', 'G', 'h', 'I', 'j', 
@@ -47,14 +47,38 @@ public class Loops {
             System.out.println("El  numero es " + number + " su tercera potencia es: " + thirdPower + " y su cuarta es: " + fourthPower);
         }*/
  /*2.5. Leer 10 números e imprimir solamente los números positivos.*/
-        /*int[] numbers = {12, -45, 32, -67, 89, -23, 56, -34, 78, -90};
+ /*int[] numbers = {12, -45, 32, -67, 89, -23, 56, -34, 78, -90};
         for (int number : numbers) {
             if (number >= 0) {
                 System.out.println(number);
             }
         }*/
-/*2.6. Leer 20 números e imprimir cuantos son  positivos, cuantos negativos y cuantos neutros.*/
-        
+ /*2.6. Leer 20 números e imprimir cuantos son  positivos, cuantos negativos y cuantos neutros.*/
+        int[] numbers = {
+            12, -45, 32, -67, 89, -23, 56, -34, 78, -90,
+            21, -15, 67, 34, -89, 56, -12, 43, -72, 15
+        };
+        int positiveNumbers = 0, negativeNumbers = 0, neutralNumber = 0;
+        for(int number : numbers){
+            int numberDecision;
+            numberDecision = number > 0 ? 1 : number < 0 ? -1 : 0;
+               switch (number) {
+    case 1:
+        positiveNumbers++;
+        break;
+    case -1:
+        negativeNumbers++;
+        break;
+    case 0:
+        neutralNumber++;
+        break;
+    default:
+        System.out.println("Esto no es un numero");
+        break;
+}
+
+        }
+
     }
-    
+
 }
