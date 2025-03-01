@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package talentotech.Excercises.POO;
+package talentotech.Excercises.POO.Concesonario;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Optional;
@@ -10,7 +10,10 @@ import java.util.Optional;
 /**
  *
  * @author Est01
+ * @description Esta clase maneja un consecionario de vehiculos y gestiona clientes, vendedores e inventario.
+ * @see ver clase Vehiculo
  */
+
 public class Concesionario {
     /**
      * @param args the comand line arguments
@@ -155,7 +158,7 @@ public class Concesionario {
        
        
        //Registramos la venta
-       concesionario.registrarVenta(vendedorUno, clienteUno, vehiculoUno, fechaVentaUno);
+       //concesionario.registrarVenta(vendedorUno, clienteUno, vehiculoUno, fechaVentaUno);
        
        System.out.println(concesionario);
        
